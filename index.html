@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Fortune Cloud - Home</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background: #f4f9fc;
+      color: #333;
+    }
+
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 20px 50px;
+      background: linear-gradient(to right, #e9eaeb, #58b3ef);
+      color: #fff;
+    }
+
+    .logo {
+      font-size: 26px;
+      font-weight: bold;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 30px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #fff;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #ffd700;
+    }
+
+    .hero {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      padding: 60px 50px;
+      background: linear-gradient(to right, #eef3f7, #e8f0fc);
+    }
+
+    .hero-text {
+      flex: 1;
+      max-width: 600px;
+    }
+
+    .hero-text h1 {
+      font-size: 48px;
+      margin-bottom: 20px;
+      color: #222;
+    }
+
+    .highlight {
+      color: #007bff;
+    }
+
+    .skills-box {
+      font-size: 24px;
+      font-weight: bold;
+      border: 3px dashed gold;
+      padding: 12px 24px;
+      border-radius: 10px;
+      background: #fff;
+      margin: 25px 0;
+      text-align: center;
+      display: inline-block;
+    }
+
+    .hero-text p {
+      font-size: 18px;
+      margin-bottom: 30px;
+    }
+
+    .hero-buttons .btn {
+      padding: 12px 25px;
+      font-size: 16px;
+      border-radius: 30px;
+      transition: 0.3s ease;
+    }
+
+    .hero-image {
+      flex: 1;
+      text-align: center;
+    }
+
+    .hero-image img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 12px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    }
+
+    .social-icons {
+      position: fixed;
+      top: 50%;
+      left: 15px;
+      transform: translateY(-50%);
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      z-index: 10;
+    }
+
+    .social-icons a img {
+      width: 36px;
+      height: 36px;
+      transition: transform 0.3s;
+    }
+
+    .social-icons a img:hover {
+      transform: scale(1.2);
+    }
+
+    .courses h2 {
+      font-weight: 700;
+      color: #007bff;
+      text-transform: uppercase;
+    }
+
+    .courses .card {
+      border: none;
+      border-radius: 15px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .courses .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 12px 24px rgba(0, 123, 255, 0.2);
+    }
+
+    .courses .card-img-top {
+      height: 180px;
+      object-fit: cover;
+      border-radius: 15px 15px 0 0;
+    }
+
+    .courses .card-title {
+      color: #007bff;
+      font-weight: 600;
+    }
+
+    .courses .card-text {
+      color: #555;
+    }
+
+    footer {
+      background-color: #f8f9fa;
+      padding: 30px 0;
+      font-size: 14px;
+      color: #666;
+    }
+
+    footer a {
+      color: #007bff;
+      transition: 0.3s;
+    }
+
+    footer a:hover {
+      color: #0056b3;
+      text-decoration: underline;
+    }
+
+    @media screen and (max-width: 768px) {
+      header {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+      }
+
+      nav ul {
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      .hero {
+        flex-direction: column;
+        padding: 40px 20px;
+      }
+
+      .hero-text h1 {
+        font-size: 36px;
+      }
+
+      .skills-box {
+        font-size: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+ <div class="logo">
+    <img src="/images/logo/newlogo-original.png" alt="Fortune Cloud Logo" style="height: 40px; margin-right: 10px;" />
+    <span>FortuneCloud</span></div>
+  <nav>
+    <ul>
+      <li><a href="#">Courses</a></li>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="#">About Us</a></li>
+      <li><a href="#">Gallery</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<div class="social-icons">
+  <a href="#"><img src="https://img.icons8.com/fluency/48/facebook-new.png" alt="Facebook"></a>
+  <a href="#"><img src="https://img.icons8.com/fluency/48/instagram-new.png" alt="Instagram"></a>
+  <a href="#"><img src="https://img.icons8.com/fluency/48/youtube-play.png" alt="YouTube"></a>
+  <a href="#"><img src="https://img.icons8.com/fluency/48/linkedin.png" alt="LinkedIn"></a>
+</div>
+
+<section class="hero">
+  <div class="hero-text">
+    <h1>Your skills for Today <br><span class="highlight">Is your Success</span> for tomorrow</h1>
+    <div class="skills-box">100% SKILLS = 100% JOB</div>
+    <p>Foster a culture of lifelong learning to keep individuals and organizations ahead in the rapidly evolving tech landscape.</p>
+    <div class="hero-buttons">
+      <button class="btn btn-primary">Find Courses</button>
+      <button class="btn btn-danger">Enquire Now</button>
+    </div>
+  </div>
+  <div class="hero-image">
+    <img src="/images/banner/girl-1.webp" alt="Hero Student" />
+  </div>
+</section>
+
+<section class="courses py-5">
+  <div class="container-fluid px-5">
+    <h2 class="text-center mb-5">Our Courses</h2>
+    <div class="row">
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="card">
+          <img src="assets/images/course-img/java.png" class="card-img-top" alt="Java Course" />
+          <div class="card-body">
+            <h5 class="card-title">Java</h5>
+            <p class="card-text">Learn Java programming from scratch.</p>
+            <a href="#" class="btn btn-outline-primary btn-block">Details</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="card">
+          <img src="assets/images/course-img/python.png" class="card-img-top" alt="Python Course" />
+          <div class="card-body">
+            <h5 class="card-title">Python</h5>
+            <p class="card-text">Master Python for data science and web development.</p>
+            <a href="#" class="btn btn-outline-primary btn-block">Details</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="card">
+          <img src="assets/images/course-img/aws.png" class="card-img-top" alt="AWS Course" />
+          <div class="card-body">
+            <h5 class="card-title">AWS</h5>
+            <p class="card-text">Learn cloud computing with AWS.</p>
+            <a href="#" class="btn btn-outline-primary btn-block">Details</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="text-center">
+  <p class="mb-2">&copy; 2025 Fortune Cloud. All Rights Reserved.</p>
+  <ul class="list-inline mb-0">
+    <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
+    <li class="list-inline-item"><a href="#">Terms of Service</a></li>
+  </ul>
+</footer>
+
+<!-- JS -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>
